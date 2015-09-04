@@ -1,7 +1,7 @@
 <html lang="ru">
 
     <head>
-        <title>Buro / Documents</title>
+        <title>Buro / Messages</title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -88,13 +88,13 @@
                 <div class="content_title_wrapper">
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-md-9 text-left">
-                            <div class="content_title">
-                                <span>
+                            <div class="media">
+                                <div class="media-left">
                                     <img src="/img/icon-arrow-right.png" class="icon_title media-object" />
-                                </span>
-                                <span>
-                                    <h1>Документы</h1>
-                                </span>
+                                </div>
+                                <div class="media-body">
+                                    <h1 class="content_title">Документы</h1>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 text-right">
@@ -106,65 +106,46 @@
                     </div>
                 </div>
                 <div class="content_container">
-                    <div class="table_wrapper table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Название файла</th>
-                                    <th>Автор</th>
-                                    <th>Дата загрузки</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Договор.doc</td>
-                                    <td>Вы</td>
-                                    <td>02 января 2015 в 01:45</td>
-                                    <td>
-                                        <button type="button" class="delete_btn">
-                                            <span class="icon_delete glyphicon glyphicon-trash"></span>
-                                        </button>
-                                        <button type="button" class="edit_btn">
-                                            <span class="icon_edit glyphicon glyphicon-pencil"></span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>квитанция.pdf</td>
-                                    <td>Вы</td>
-                                    <td>@24 января 2015 в 17:00</td>
-                                    <td>
-                                        <button type="button" class="delete_btn">
-                                            <span class="icon_delete glyphicon glyphicon-trash"></span>
-                                        </button>
-                                        <button type="button" class="edit_btn">
-                                            <span class="icon_edit glyphicon glyphicon-pencil"></span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>шаблон_договора.pdf</td>
-                                    <td>Администратор</td>
-                                    <td>10 февраля 2015 в 16:42</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="upload_zone">
-                        <form action="/upload.php">
-                            <div id="dropZone">
-                                <span class="glyphicon glyphicon-upload"></span>
-                                <span>Перетащите сюда файл для загрузки или
-                                    <u>выберите его</u>
-                                </span>
+                    <div class="row">
+                        <form class="message_form">
+                            <div class="col-xs-12 col-sm-2">
+                                <label class="message_form-title">Написать</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <textarea row="3" placeholder="Текст сообщения" class="message_form-text form-control"></textarea>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <button type="submit" class="btn submit_message_form">Отправить</button>
                             </div>
                         </form>
+                    </div>
+                    <div class="row">
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <div class="media-date">45653</div>
+                                        <div class="media-time">435435</div>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">fdgfdgd</h4>
+                                    <p class="media-text">fgfdgdfg</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <div class="media-date">645645</div>
+                                        <div class="media-time">45645</div>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">qwasdfasfa</h4>
+                                    <p class="media-text">qeqwewqe</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

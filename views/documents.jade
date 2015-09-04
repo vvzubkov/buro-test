@@ -1,6 +1,6 @@
 extends extends/_layout
 block title
-  title Buro / Messangers
+  title Buro / Documents
 
 block header
 
@@ -36,12 +36,63 @@ block content
           .exit_block
             button(type='button').btn.btn-exit Выход
 
-      .col-xs-12.col-sm-9.content.col-xs-offset-0.col-sm-offset-3
+      .col-xs-12.col-sm-9.col-xs-offset-0.col-sm-offset-3.content
         .content_title_wrapper
-          h1.content_title
-            span.icon.glyphicon.glyphicon-arrow-right
-            span.text Документы
+          .row
+            .col-xs-12.col-sm-8.col-md-9.text-left
+              .content_title
+                span
+                  img(src='/img/icon-arrow-right.png').icon_title.media-object
+                span
+                  h1 Документы
+
+            .col-xs-12.col-sm-4.col-md-3.text-right
+              a(href='#').btn-back_to_site
+                img(src='/img/icon-logout.png')
+                span назад на сайт
 
         .content_container
+          .table_wrapper.table-responsive
+            table.table
+              thead
+                tr
+                  th #
+                  th Название файла
+                  th Автор
+                  th Дата загрузки
+                  th
+              tbody
+                tr
+                  th(scope="row") 1
+                  td Договор.doc
+                  td Вы
+                  td 02 января 2015 в 01:45
+                  td
+                    button(type='button').delete_btn
+                      span.icon_delete.glyphicon.glyphicon-trash
+                    button(type='button').edit_btn
+                      span.icon_edit.glyphicon.glyphicon-pencil
+                tr
+                  th(scope="row") 2
+                  td квитанция.pdf
+                  td Вы
+                  td @24 января 2015 в 17:00
+                  td
+                    button(type='button').delete_btn
+                      span.icon_delete.glyphicon.glyphicon-trash
+                    button(type='button').edit_btn
+                      span.icon_edit.glyphicon.glyphicon-pencil
+                tr
+                  th(scope="row") 3
+                  td шаблон_договора.pdf
+                  td Администратор
+                  td 10 февраля 2015 в 16:42
+                  td
+
+          .upload_zone
+            form(action="/upload.php")
+              #dropZone
+                span.glyphicon.glyphicon-upload
+                span Перетащите сюда файл для загрузки или <u>выберите его</u>
 
 block extra_script

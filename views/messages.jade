@@ -1,0 +1,77 @@
+extends extends/_layout
+block title
+  title Buro / Messages
+block header
+block content
+  main.container-fluid
+    .row
+      .col-xs-12.col-sm-3.sidebar
+        nav.navbar
+          .navbar-header
+            button(type='button' data-toggle='collapse' data-target='#main-navbar' aria-expanded='false').navbar-toggle.collapsed
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            .logo_wrap
+              a.brand-link(href='#')
+                img(src='/img/logo.png').img-responsive
+            .logo_sign Дизайн. Иновации. Строительство.
+        #main-navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#') Мои объекты
+            li.active
+              a(href='#') Документы
+            li
+              a(href='#') Сообщения
+            li
+              a(href='#') Настройки
+        .sidebar_footer
+          .callback_block
+            .callback_block_title свяжитесь с нами
+            .callback_block_phone +7 (495) 444-55-66
+          .exit_block
+            button(type='button').btn.btn-exit Выход
+      .col-xs-12.col-sm-9.col-xs-offset-0.col-sm-offset-3.content
+        .content_title_wrapper
+          .row
+            .col-xs-12.col-sm-8.col-md-9.text-left
+              .media
+                .media-left
+                  img(src='/img/icon-arrow-right.png').icon_title.media-object
+                .media-body
+                  h1.content_title Документы
+            .col-xs-12.col-sm-4.col-md-3.text-right
+              a(href='#').btn-back_to_site
+                img(src='/img/icon-logout.png')
+                span назад на сайт
+        .content_container
+          .row
+            form.message_form
+              .col-xs-12.col-sm-2
+                label.message_form-title Написать
+              .col-xs-12.col-sm-8
+                textarea.message_form-text.form-control(row='3' placeholder='Текст сообщения')
+              .col-xs-12.col-sm-2
+                button(type='submit').btn.submit_message_form Отправить
+          .row
+            ul.media-list
+              li.media
+                .media-left
+                  a(href='#')
+                    .media-date 45653
+                    .media-time 435435
+                .media-body
+                  h4.media-heading fdgfdgd
+                  p.media-text fgfdgdfg
+              li.media
+                .media-left
+                  a(href='#')
+                    .media-date 645645
+                    .media-time 45645
+                .media-body
+                  h4.media-heading qwasdfasfa
+                  p.media-text qeqwewqe
+
+block extra_script
