@@ -21,10 +21,10 @@ block content
           ul.nav.navbar-nav
             li
               a(href='#') Мои объекты
-            li.active
-              a(href='#') Документы
             li
-              a(href='#') Сообщения
+              a(href='/documents.html') Документы
+            li.active
+              a(href='/messages.html') Сообщения
             li
               a(href='#') Настройки
         .sidebar_footer
@@ -33,19 +33,21 @@ block content
             .callback_block_phone +7 (495) 444-55-66
           .exit_block
             button(type='button').btn.btn-exit Выход
+
       .col-xs-12.col-sm-9.col-xs-offset-0.col-sm-offset-3.content
         .content_title_wrapper
           .row
             .col-xs-12.col-sm-8.col-md-9.text-left
-              .media
-                .media-left
+              .content_title
+                span
                   img(src='/img/icon-arrow-right.png').icon_title.media-object
-                .media-body
-                  h1.content_title Документы
+                span
+                  h1 Документы
             .col-xs-12.col-sm-4.col-md-3.text-right
               a(href='#').btn-back_to_site
                 img(src='/img/icon-logout.png')
                 span назад на сайт
+
         .content_container
           .row
             form.message_form
@@ -56,22 +58,22 @@ block content
               .col-xs-12.col-sm-2
                 button(type='submit').btn.submit_message_form Отправить
           .row
-            ul.media-list
-              li.media
-                .media-left
-                  a(href='#')
-                    .media-date 45653
-                    .media-time 435435
-                .media-body
-                  h4.media-heading fdgfdgd
-                  p.media-text fgfdgdfg
-              li.media
-                .media-left
-                  a(href='#')
-                    .media-date 645645
-                    .media-time 45645
-                .media-body
-                  h4.media-heading qwasdfasfa
-                  p.media-text qeqwewqe
+            ul.mess_list
+              li
+                .row
+                  .col-xs-12.col-sm-3.col-md-2
+                    .mess-date 15 января 2015
+                    .mess-time в 16:24:45
+                  .col-xs-12.col-sm-9.col-md-10
+                    h4.mess-heading Администратор
+                    p.mess-text Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              li
+                .row
+                  .col-xs-12.col-sm-3.col-md-2
+                    .mess-date 15 января 2015
+                    .mess-time в 16:24:45
+                  .col-xs-12.col-sm-9.col-md-10
+                    h4.mess-heading Вы
+                    p.mess-text Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
 block extra_script
