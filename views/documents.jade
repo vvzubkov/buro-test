@@ -1,0 +1,40 @@
+extends extends/_layout
+block title
+  title Buro / Messangers
+
+block header
+
+block content
+  main.container-fluid
+    .row
+      .col-xs-12.col-sm-3.sidebar
+        nav.navbar
+          .navbar-header
+            button(type='button' data-toggle='collapse' data-target='#main-navbar' aria-expanded='false').navbar-toggle.collapsed
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img
+
+        #main-navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#') Мои объекты
+            li.active
+              a(href='#') Документы
+            li
+              a(href='#') Сообщения
+            li
+              a(href='#') Настройки
+
+      .col-xs-12.col-sm-9.content
+        .content_title_wrapper
+          h1.content_title
+            span.icon.glyphicon.glyphicon-arrow-right
+            span.text Документы
+
+        .content_container
+
+block extra_script
