@@ -15,9 +15,10 @@ block content
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='#')
-              img
-
+            .logo_wrap
+              a.brand-link(href='#')
+                img(src='/img/logo.png').img-responsive
+            .logo_sign Дизайн. Иновации. Строительство.
         #main-navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
@@ -28,8 +29,14 @@ block content
               a(href='#') Сообщения
             li
               a(href='#') Настройки
+        .sidebar_footer
+          .callback_block
+            .callback_block_title свяжитесь с нами
+            .callback_block_phone +7 (495) 444-55-66
+          .exit_block
+            button(type='button').btn.btn-exit Выход
 
-      .col-xs-12.col-sm-9.content
+      .col-xs-12.col-sm-9.content.col-xs-offset-0.col-sm-offset-3
         .content_title_wrapper
           h1.content_title
             span.icon.glyphicon.glyphicon-arrow-right
